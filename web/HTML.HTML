@@ -5,14 +5,14 @@
         <title>HTML</title>
         <meta charset="utf-8">
         <style>
-            P>span{color:rgb(158, 0, 124)}
+            P>span{color:rgb(12, 0, 9)}
                 #Hunter{width: 500px;
-                border: 2px outset rgb(36, 255, 7);
+                border: 2px outset rgb(0, 0, 0);
             }
-            h1{color:deeppink}
+            h1{color:rgb(0, 19, 1)}
             table,td,th{border: 3px double peru;
             border-collapse: collapse;}
-            caption{color: rgb(234, 2, 255);
+            caption{color: rgb(0, 0, 0);
             border-collapse: collapse;
             }
             /** #RRGGBBAA **/
@@ -20,7 +20,7 @@
             /** #0000FF   **/
             /** #0000FFAA   **/
             #Tabela-Churras,#Tabela-Churras td,#Tabela-Churras th,caption{
-                border: 2px solid rgb(255, 0, 255);
+                border: 2px solid rgb(238, 84, 84);
             }
             
                 #Tabela-Churras caption{
@@ -29,26 +29,31 @@
                   
 
                 #Tabela-Churras tr:nth-child(2n){
-                    background-color: purple;
+                    background-color: rgb(146, 49, 49);
                 }
                 #Tabela-Churras td:hover{
-                    background-color: violet;
+                    background-color: rgb(255, 97, 97);
                     font-size: 4em;
                     transition: linear 1s;
                 }
                 #Tabela-Churras tr:hover{
-                    background-color: rgb(148, 57, 160);
+                    background-color: rgb(240, 108, 108);
                 }
-                #card{border:3px solid rgb(11, 224, 22);
-                box-shadow: 10px 5px rgb(86, 253, 155);
+                #card{border:3px solid rgb(240, 156, 156);
+                box-shadow: 10px 5px rgb(247, 209, 209);
                 display: inline-block;
                 }
                 #card #Hunter{
                     width: 500px;
                     border-radius: 50px;
                 }
-                #card #dolly{
-                    border-radius: 30px;
+                #card #Foca{
+                    border-radius: 100px;
+                    width: 100px;
+
+                }
+                table, th, td {
+                    border: 3px solid black;
                 }
         </style>
     </head>
@@ -258,10 +263,86 @@
            
         <h1>Container</h1>
         <div id="card">
-            <img id="dolly" src="./Imagens/d0olly.jpg" alt="Dolly">
+            <img id="Foca" src="./Imagens/Foca.webp" alt="Foca">
+            <h2>@Focanitos</h2>
         <h2>Hunter</h2>
         <img id="Hunter" src="./Imagens/hUNTER.avif" alt="HunterxHunter">
         <a href="https://bleedingcool.com/tv/hunter-x-hunter-a-little-late-but-still-loving-this-anime-party/">Link referencia do site</a>
         </div>
     </body>
+
+<Hr></Hr>
+
+    <h1>The thead, tbody, and tfoot elements</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Itens</th>
+      <th>Preços</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Resident evil</td>
+      <td>R$300,00</td>
+    </tr>
+    <tr>
+      <td>Paçoca</td>
+      <td>R$1,00</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Linguiça</td>
+      <td>R$100,00</td>
+    </tr>
+  </tfoot>
+</table>
+
+<hr>
+<h2>Formulários e Inputs</h2>
+<a href="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_tbody"> Formularios</a>
+<br><br><hr>
+<h2 id ="ExemploForce">Exemplo</h2>
+<form action="">
+    <label for="nome">informe seu nome:</label><br>
+     <!--Adiciona uma barra de texto-->
+    <input id="nome" type="text"><br><br>
+     <!--Adiciona uma barra para colocar uma cor-->
+     <label for="cor">Cor Favorita</label><br>
+    <input id="cor"type="color"><br><br>
+     <!--Adiciona uma barra para colocar uma data-->
+     <label for="date">Informe uma data:</label><br>
+    <input id="date"type="date"><br><br>
+     <!--Adiciona uma barra para colocar uma tempo de data-->
+     <label for="Datetime">Datetime:</label><br>
+    <input id="Datetime"type="datetime"><br><br>
+     <!--Adiciona uma barra para escolher arquivo-->
+     <label for="File">Escolha um Arquivo:</label><br>
+    <input id="File"type="file"><br><br>
+     <!--Adiciona uma barra para escolher um numero-->
+      <label for="number">Escolha um Numero:</label><br>
+    <input type="number"><br><br>
+    <!--Adiciona um quadrado para selecionar-->
+     <label for="check">Clique no Checkbox</label><br>
+    <input type="checkbox"><br><br>
+     <!--Adiciona um circulo para selecionar-->
+      <label for="Radio">Clique Nele:</label><br>
+    <input type="radio"><br><br>
+     <!--Adiciona um negocio tipo de volume-->
+      <label for="Range">Mova:</label><br>
+    <input type="range"><br><br>
+
+    <input type="submit" value="submit">
+    <button>Botão</button>
+
+</form>
+<button>Botão</button>
+<form action="https://google.com/search"method ="post">
+    <label for="chave">Informe sua Busca:</label>
+    <input type="text" name="q" id="chave">
+
+    <input type="submit" value="Pesquisar">
+</form>
 </html>
